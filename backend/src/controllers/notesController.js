@@ -1,5 +1,7 @@
 import Note from "../models/Note.js";
-
+// hello this is a comment
+// hello this is another comment
+//hello this is a third comment
 export async function getAllNotes(_, res) {
   try {
     const notes = await Note.find().sort({ createdAt: -1 }); // -1 will sort in desc. order (newest first)
